@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Join the community</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+</head>
+<body>
+    <div>
+        <div class="header sticky">
+            <a href="./index.html" class="logo">One Blood</a>
+            <div class="header-right">
+              <a href="./index.html">Home</a>
+              <a href="donations.html">Donation</a>
+              <a class="active" href="./community.html">Community</a>
+              <a href="./contactus.html">Contact</a>
+              <a href="./AboutUs.html">About Us</a>
+            </div>
+        </div>
+        <div>
+            <div class="rowArticles">
+                <div class="column-community left">
+                    <h2 id="articletitle">What it’s really like to give blood</h2>
+                    <p id="coreArticle">"After all, you have something inside you that no factory can make, and that a lot of people need in order to survive. You can give it safely, in about an hour, and you’ll barely feel a thing.</p>
+                    <a href="./article1.html" style="text-align:right">Continues reading</a>
+                </div>
+                <div class="column-community right">
+                  <img id="maskedWoman" src="./images/Masked-Woman-Glasses-Smile-Gauze.jpg">
+                </div>
+              </div>
+
+              <div class="rowArticles2">
+                <div class="column-community left">
+                    <h2 id="articletitle">The Surprising Benefits of Donating Blood</h2>
+                    <p class="coreArticle">Regular blood donation is linked to lower blood pressure and a lower risk for heart attacks. “It definitely helps to reduce cardiovascular risk factors,” says DeSimone</p>
+                    <a href="./article2.html">Continues reading</a>
+                </div>
+                <div class="column-community right">
+                  <img id="article2Image" src="./images/article2.png">
+                </div>
+              </div>
+
+            <div class="YourArticle">
+                <div class="column-community left">
+                    <h2 id="YourArticleTitle"></h2>
+                    <p class="coreArticle"></p>
+                </div>
+                <div class="column-community right">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+    $('.YourArticle').hide()
+
+    $(document).ready(function(){
+
+    $('#submitArticle').click(function(){
+        var titleArticle=$('#titleArticle').val()
+        var textArticle = $('#textArticle').val()
+        $('.rowArticles').hide()
+        $('.YourArticle').show()
+        $('#YourArticleTitle').append(titleArticle)
+        $('.coreArticle').append(textArticle)
+    })
+})
+</script>
+</body>
+<footer id="communityFotter">
+   <div> 
+    <input type="text" id="titleArticle" placeholder="Your title">
+</div>
+<div> 
+    <input type="text" id="textArticle" placeholder="Your Article">
+</div>
+<div>
+    <button id="submitArticle">Share your experience</button>
+</div>
+  </footer>
+</html>

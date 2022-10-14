@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="style.css">
+	<title>
+		DONATE
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div>
+	<video autoplay muted loop id="myVideo">
+		<source src="./images/bld.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+	</div>
+
+	<div style="opacity:50;" class="header">
+		<a style="opacity:100;" href="./index.html" class="logo">One Blood</a>
+		<div class="header-right">
+		  <a href="index.html">Home</a>
+		  <a class="active" href="donations.html">Donation</a>
+		  <a href="./community.html">Community</a>
+		  <a href="./contactus.html">Contact</a>
+		  <a href="./AboutUs.html">About Us</a>
+		</div>
+	</div>
+
+	<h1 id="title2">Donate blood, live longer!</h1>
+
+<!-- Create Form -->
+<div id="form">
+
+	<!-- Details -->
+	<div class="form-control">
+		<label for="name" id="label-name">
+			Name
+		</label>
+
+		<!-- Input Type Text -->
+		<input type="text"
+			id="name"
+			placeholder="Enter your name" />
+	</div>
+
+	<div class="form-control">
+		<label for="email" id="label-email">
+			Email
+		</label>
+
+		<!-- Input Type Email-->
+		<input type="email"
+			id="email"
+			placeholder="Enter your email" />
+	</div>
+
+	<div class="form-control">
+		<label for="role" id="label-role">
+			Which option best describes you?
+		</label>
+		
+		<!-- Dropdown options -->
+		<select name="role" id="role">
+			<option value="student">You take care of your health</option>
+			<option value="intern">You don't care about your health</option>
+			
+		</select>
+	</div>
+
+	<div class="form-control">
+		<label>
+			Are you under 17?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="0" value="Yes">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="0" value="No">No</input>
+		</label>
+		
+	</div>
+	<div class="form-control">
+		<label>
+			Do you have a tattoo?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="1" value="Yes">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="1" value="No">No</input>
+		</label>
+		
+	</div>
+	<div class="form-control">
+		<label>
+			Do you have diabetes  ?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="2" value="Yes">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="2" value="No">No</input>
+		</label>
+		
+	</div>
+	<div class="form-control">
+
+		<label>
+			Do you take your breakfast daily?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="3">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="3">No</input>
+		</label>
+		
+	</div>
+	<div class="form-control">
+
+		<label>
+			Currently taking an antibiotic?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="4">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="4">No</input>
+		</label>
+		
+	</div>
+	<div class="form-control">
+		<label>
+			Currently taking any other medication for an infection?
+		</label>
+
+		<!-- Input Type Radio Button -->
+		<label for="recommed-1">
+			<input type="radio"
+				class="yes"
+				name="5">Yes</input>
+		</label>
+		<label for="recommed-2">
+			<input type="radio"
+				class="no"
+				name="5">No</input>
+		</label>
+		
+	</div>
+
+
+
+	<div class="form-control">
+        <label>your blood type : 
+            <small>(Check all that apply)</small>
+        </label>
+        <!-- Input Type ra -->
+        <label for="inp-1">
+            <input type="radio"
+                name="inp" value="A+">A+</input></label>
+        <label for="inp-2">
+            <input type="radio"
+                name="inp" value="A-">A-</input></label>
+        <label for="inp-3">
+            <input type="radio"
+                name="inp" value="B+">B+</input></label>
+        <label for="inp-4">
+            <input type="radio"
+                name="inp" value="B-">B-</input></label>
+        <label for="inp-5">
+            <input type="radio"
+                name="inp" value="O+">O+</input></label>
+        <label for="inp-6">
+            <input type="radio"
+                name="inp" value="O-">O-</input></label>
+        <label for="inp-7">
+            <input type="radio"
+                name="inp" value="AB+">AB+</input></label>
+        <label for="inp-7">
+            <input type="radio"
+                name="inp" value="AB-">AB-</input></label>
+
+    </div>
+
+	<div class="form-control">
+		<label for="comment">
+			Any comments
+		</label>
+
+		<!-- multi-line text input control -->
+		<textarea name="comment" id="comment"
+			placeholder="Enter your comment here">
+		</textarea>
+	</div>
+
+	<!-- Multi-line Text Input Control -->
+	<button id ="submit" onclick = "sub()" >
+		Submit
+	</button>
+	<p id="error"></p>
+</div>
+
+<div id="approval">
+	<div class="approvalBox">
+		<div class="white-box">
+		  
+		  <div class="featured">Thank you!</div>
+		  <div><span>You have been approved for donation.</span></div>
+		  <p>We want to thank you for taking the time to fill our survey, the safety of everyone is our priority</p>
+		  <p>Please choose your location below in order to provide you the closest donation center in your city:</p>
+		  <select id="demo">
+			<option value="Ariana">Ariana</option>
+			<option value="Beja">Beja</option>
+			<option value="Ben Arous">Ben Arous</option>
+			<option value="Bizerte">Bizerte</option>
+			<option value="Gabès">Gabès</option>
+			<option value="Gafsa">Gafsa</option>
+			<option value="Mannouba">Mannouba</option>
+			<option value="Tunis">Tunis</option>
+		  </select>
+		  <button id="ok" >OK</button>
+		  <p id="location" ></p>
+		  <div id="type" ></div>
+
+</div1>
+
+<script src = 'jquery.js'>
+	
+</script>
+	
+</body>
+
+</html>

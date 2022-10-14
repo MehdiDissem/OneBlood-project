@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>One Blood - donations portal</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+</head>
+<body>
+    <div class="divForTheWholePage">
+        <!-- hedha el header -->
+        <div class="header sticky">
+            <a href="./index.html" class="logo">One Blood</a>
+            <div class="header-right">
+              <a class="active" href="#home">Home</a>
+              <a href="./donations.html">Donation</a>
+              <a href="./community.html">Community</a>
+              <a href="./contactus.html">Contact</a>
+              <a href="./AboutUs.html">About Us</a>
+            </div>
+        </div>
+            <p></p>
+            <br>
+            <!-- hedhom slides -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="./images/1.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="./images/2.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="./images/3.png" style="width:100%">
+                </div>
+                <br>
+            <div>
+                <hr class="dashed">
+            </div>
+            <div>
+                <h1 id="title1" style="text-align:center">Every day, blood donors help patients of all ages: accident and burn victims, heart surgery and organ transplant patients, and those battling cancer. In fact, every two seconds, someone in our world needs blood.</h1>
+            </div>
+            <h2 id="typesheader" class="lineUp" style="text-align:center"><em>Types of blood donation</em></h2>
+            <div class="row">
+                <div class="column" style="background-color:#F1F1F1;">
+                  <h2 style="text-align:center">WHOLE BLOOD</h2>
+                  <p style="text-align:center">What is whole blood donation? A whole blood (WB) donation is the most common form of blood donation, in which a person gives one pint of blood.</p>
+                </div>
+                <div class="column" style="background-color:#F1F1F1;">
+                  <h2 style="text-align:center">PLATELETS</h2>
+                  <p style="text-align:center">What are platelets used for? Platelets, which come from bone marrow, help to induce clotting and control bleeding.</p>
+                </div>
+                <div class="column" style="background-color:#F1F1F1;">
+                  <h2 style="text-align:center">PLASMA</h2>
+                  <p style="text-align:center">What is plasma used for? Much like platelets, plasma helps to induce clotting and control bleeding.</p>
+                </div>
+            </div>
+            </div>
+            <div>
+                <hr class="dashed">
+            </div>
+            <div>
+                <div class="banner1">
+                    <div class=" big-text animated tada">Ready to Help Save a Life</div>
+                     <a href="donations.html">Donate</a>
+                   </div>
+            </div>
+            <div>
+                
+            </div>
+            <hr>
+            <div class="row" style="margin-bottom:50px">
+                <div class="column2 border-right">
+                  <h2 id="h2part">Be part of us</h2>
+                  <p id="pPart">"Donate blood because you never know how valuable it can be to someone"</p>
+                </div>
+                <div class="column2">
+                  <img id="gifOne" src="./images/giphy.gif">
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom:50px">
+                <div class="column2 border-right">
+                    <img id="gifOne" src="./images/fundraising-donate.gif">
+                </div>
+                <div class="column2">
+                    <h2 id="h2part" class="count">731</div>
+                        <p id="pPart">People donated !</p>
+                </div>
+            </div>
+
+            <hr class="dashed">
+            
+            <footer id="fixed">
+                <h5>Be the reason for someone’s heartbeat.</h5>
+            </footer>
+
+            
+    </div>
+    <script>
+      var slides =  $('.mySlides');
+      var slideIndex = 0
+      showSlides()
+      function showSlides() {
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000);
+  }
+
+
+  $('.count').each(function () {
+    $('.count').prop('Counter',0).animate({
+        Counter: $('.count').text()
+    }, {
+        duration: 3000, //from jquery official website
+        easing: 'swing',
+        step: function (now) {
+            $('.count').text(Math.ceil(now));
+        }
+    });
+});
+    </script>
+</body>
+</html>
